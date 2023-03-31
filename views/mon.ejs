@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring</title>
+    <style>
+        body {
+            color: aliceblue;
+            background: black;
+            text-align: left;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Страница устройства с id: <%= deviceID %> <!-- знак равенства позволяет сразу вывести информацию -->
+    </h1>
+    <ul>Температурный датчик1: <%= temperature1 %>
+    </ul>
+    <ul>Температурный датчик2: <%= temperature2 %>
+    </ul>
+    <ul>Датчик влажности1: <%= humidity1 %>
+    </ul>
+    <ul>Датчик влажности2: <%= humidity2 %>
+    </ul>
+</body>
+
+</html>

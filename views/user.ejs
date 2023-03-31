@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS</title>
+    <style>
+        body {
+            color: aliceblue;
+            background: black;
+            text-align: left;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Страница пользователя: <%= username %> <!-- знак равенства позволяет сразу вывести информацию -->
+    </h1>
+    <% if (username.toLowerCase()=='john' ) {%>
+        <ul>
+            <% hobbies.forEach((element)=> {%>
+                <li>
+                    <%= element %>
+                </li>
+                <%})%>
+        </ul>
+        <%} %>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rerum quidem facilis totam minus, similique
+                quas
+                necessitatibus cupiditate, molestiae architecto quae? Totam fugiat nobis consequatur fugit ex nam!
+                Deserunt,
+                eligendi?</p>
+            <a href="index.html">Главная</a>
+</body>
+
+</html>
