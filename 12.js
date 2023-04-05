@@ -3,39 +3,20 @@ const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))//указываем статическую папку, чтоб стили работали, картинки, видео
-// app.get('/', (req, res) => {
-//     res.sendFile(__dirname + '/templates/index.html')
-// })
+
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index12')
 })
-
-// app.get('/index.html', (req, res) => {
-//     res.sendFile(__dirname + '/templates/index.html')
-// })
-
-app.get('/index.html', (req, res) => {
-    res.render('index')
+app.get('/index12.html', (req, res) => {
+    res.render('index12')
 })
-
-// app.get('/about.html', (req, res) => {
-//     res.sendFile(__dirname + '/templates/about.html')
-// })
-
-app.get('/about.html', (req, res) => {
-    res.render('about')
+app.get('/about12.html', (req, res) => {
+    res.render('about12')
 })
-
-
 app.get('/404.html', (req, res) => {
     res.render('404')
 })
-
-// app.get('/user/:username/:id', (req, res) => { //после : создаём динамические параметры
-//     res.send(`User id: ${req.params.id}. Username: ${req.params.username}`)
-//     //используем динамические параметры (http://localhost:3000/user/test/1)
-// })
 
 
 app.get('/user/:username', (req, res) => { //после : создаём динамические параметры
@@ -44,10 +25,7 @@ app.get('/user/:username', (req, res) => { //после : создаём дин�
     //используем динамические параметры (http://localhost:3000/user/test)
 })
 
-
-
 const PORT = 3000
-
 app.listen(PORT, () => {
     console.log(`Server started: http://localhost:${PORT}`);
 })

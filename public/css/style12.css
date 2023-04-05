@@ -1,0 +1,43 @@
+   * {
+    margin: 0;
+    padding: 0;
+   }
+html, body{
+    height: 100%;
+}
+.header {
+    height: 10%;
+    background-color: rgb(38, 39, 39);
+}
+.center{
+    padding: 50px 25px;
+
+}
+.menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu1 > a{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: antiquewhite;
+}
+
+.main{
+    height: 80%;
+}
+.main-text{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.footer{
+    height: 10%;
+    background-color: bisque;
+}
+.footer-text{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.footer-text > p{
+    padding-left: 20px;
+}
